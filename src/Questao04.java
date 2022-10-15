@@ -11,10 +11,12 @@ public class Questao04 {
         System.out.print("Digite o nome do colaborador: ");
         String nome = input.nextLine();
 
-        System.out.print("Digite o valor da hora trabalhada desse colaborador: ");
+        System.out.println("Digite o valor da hora trabalhada desse colaborador: " +
+                "(em caso de números decimais, utilize vírgula para separar a parte fracionária)");
         double valorHora = input.nextDouble();
 
-        System.out.print("Digite quantas horas esse colaborador trabalhou nesse mês: ");
+        System.out.println("Digite quantas horas esse colaborador trabalhou nesse mês: " +
+                "(em caso de números decimais, utilize vírgula para separar a parte fracionária)");
         double horasTrabalhadas = input.nextDouble();
 
         double salario = valorHora * horasTrabalhadas;
