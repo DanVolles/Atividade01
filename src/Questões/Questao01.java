@@ -1,3 +1,5 @@
+package Questões;
+
 import java.util.Scanner;
 
 public class Questao01 {
@@ -18,10 +20,14 @@ public class Questao01 {
 
         double media = (nota1+nota2)/2;
 
-        if (media > 7.00) {
+        if (media >= 7.00 && media <= 10.00) {
             System.out.println("O aluno foi APROVADO com nota " + media + "!");
-        } else {
+        } else if (media >= 4.00 && media < 7.00) {
+            System.out.println("O aluno está em RECUPERAÇÃO com nota " + media + "!");
+        } else if (media < 4.00 && media >= 0.00){
             System.out.println("O aluno foi REPROVADO com nota " + media + "!");
+        } else {
+            System.out.println("Erro de digitação");
         }
 
         System.out.println("Obrigado por utilizar este programa! Bom trabalho!");

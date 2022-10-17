@@ -1,3 +1,5 @@
+package Questões;
+
 import java.util.Scanner;
 
 public class Questao04 {
